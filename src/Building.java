@@ -12,7 +12,7 @@ public class Building {
         }
         else {
             System.out.println("Watch over children below 100 centimeters.");
-            
+
         }
 
     }
