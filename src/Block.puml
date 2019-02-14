@@ -1,0 +1,27 @@
+@startuml
+participant Buliding as B
+participant ElevatorOne as O
+
+skinparam ParticipantPadding 50
+
+note over B
+    //**People comming inside**//
+end note
+
+B --> O: open elevator doors
+
+alt if elevator has place
+    note over O
+        //**Let people in**//
+    end note
+    loop for all people
+        note over O
+            //**Get floor number**//
+        end note
+    end loop
+    note over O
+        //**Close the door**//
+        //**Go to the first floor**//
+    end note
+end
+@enduml
